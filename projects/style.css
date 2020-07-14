@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+:root {
+    --primary-color: rgba(0, 0, 0, 0.50);
+    --overlay-color: rgba(24, 39, 51, 1);
+    --menu-speed: 0.75s;
+}
+
+
+@font-face {
+    src: url(/fonts/Habisa.ttf);
+    font-family: hab;
+}
+
+@font-face {
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-family: rob;
+}
+@font-face {
+    src: url(/fonts/ShortStack-Regular.ttf);
+    font-family: short;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    font-family: rob;
+}
+
+body {
+    line-height: 1.4;
+    font-size: large;
+}
+header.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #24252A;
+    position: fixed ;
+    width: 100%;
+    z-index: 1;
+
+}
+h1.up {
+    position: realtive;
+    left: 75%;
+    margin-right: auto;
+    font-family: rob;
+    color: #edf0f1;
+}
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s; 
+}
+
+.nav_links li a:hover {
+    color: #0088a9; 
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    font-family: rob;
+}
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+
+}
+
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    font-family: rob;
+
+}
+.showcase:before {
+    content:'';
+    background: url('/img/bag.png') no-repeat center
+    center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.showcase .showcase-inner {
+    transform: translateY(-50px);
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase h1 {
+    font-size: 6rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+.showcase p {
+    font-family: short;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-right: auto;
+}

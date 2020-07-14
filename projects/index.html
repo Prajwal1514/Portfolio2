@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>
+
+
+        <header class="nav">
+            <h1 class="up">Web Dev</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <a class="cat" href="../contact.html"><button class="cta">Contact</button></a>
+        </header>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="#">A Section dedicated to my Teachers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img1.png">
+                </div>
+                <div class="details">
+                    <h3>Photgrapher Portfolio</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img2.png">
+                </div>
+                <div class="details">
+                    <h3>Furniture</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img3.png">
+                </div>
+                <div class="details">
+                    <h3>404</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img4.png">
+                </div>
+                <div class="details">
+                    <h3>Services</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img5.png">
+                </div>
+                <div class="details">
+                    <h3>Meditation</h3>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+<script src="../js/script.js"></script>
+<script type="text/javascript" src="swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 600,
+        stretch: 10,
+        depth: 1000,
+        modifier: 0.5,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+</script>
+
+</body>
+</html>
